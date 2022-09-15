@@ -1,0 +1,11 @@
+[diff]
+	tool = LVCompare
+    binary=True
+[difftool "LVCompare"]
+	cmd = \"LVCompare.exe\" \"$LOCAL\" \"$REMOTE\"
+
+[merge]
+	tool = LVMerge
+    binary=True
+[mergetool "LVMerge"]
+	cmd = \"LVMerge.exe\" \"$LOCAL\" \"$REMOTE\"
